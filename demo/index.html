@@ -22,7 +22,7 @@
 			
 			document.getElementById("go").onclick = function() {
 				var value = document.getElementById("url").value;
-				if (value) window.location.href = "c/" + xor(/^(http:\/\/|https:\/\/)/i.test(url) ? url : "https://" + url);
+				if (value) window.location.href = "c/" + xor(/^(http:\/\/|https:\/\/)/i.test(value) ? value : "https://" + value);
 			}
 			
 		</script>
