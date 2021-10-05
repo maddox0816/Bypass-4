@@ -5,7 +5,8 @@ const server = http.createServer();
 const Corrosion = require('../');
 const proxy = new Corrosion({
     codec: 'xor',
-	prefix: '/c/'
+	prefix: '/c/',
+	forceHttps: true
 });
 
 proxy.bundleScripts();
